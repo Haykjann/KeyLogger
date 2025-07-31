@@ -22,9 +22,11 @@ jobs:
 
     - name: Build with Maven
       run: mvn clean package
+      working-directory: security_report
 
     - name: Build Docker image
       run: docker build -t haykmkrtchyan3/keylogger:latest .
+      working-directory: security_report
 
     - name: Log in to DockerHub
       uses: docker/login-action@v2
