@@ -1,6 +1,3 @@
-FROM: security_report/ci.yml
-TO:   .github/workflows/ci.yml
-
 name: Java Keylogger CI/CD
 
 on:
